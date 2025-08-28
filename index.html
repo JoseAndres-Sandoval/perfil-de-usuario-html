@@ -1,11 +1,79 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Perfil de usuario con biografía, datos de contacto y formulario.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario</title>
 </head>
 <body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Perfil de Usuario</h1>
+  </header>
 
+  <!-- Contenido principal -->
+  <main>
+    <!-- Imagen de perfil -->
+    <section>
+      <img src="https://via.placeholder.com/150" alt="Foto de perfil del usuario">
+      <h2>Juan Pérez</h2>
+    </section>
+
+    <!-- Biografía -->
+    <article>
+      <h3>Biografía</h3>
+      <p>
+        Soy estudiante de informática, apasionado por el desarrollo web y la
+        tecnología. Me gusta aprender constantemente y trabajar en proyectos
+        innovadores.
+      </p>
+    </article>
+
+    <!-- Tabla de contacto -->
+    <section>
+      <h3>Detalles de Contacto</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Tipo</th>
+            <th>Dato</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Email</td>
+            <td>jose.sandoval@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Teléfono</td>
+            <td>+54 2613132991</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Formulario -->
+    <section>
+      <h3>Actualizar Perfil</h3>
+      <form>
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="correo">Email: </label>
+        <input type="email" id="correo" name="correo"><br><br>
+
+        <label for="bio">Biografía: </label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Actualizar">
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 Perfil de Usuario - Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>
